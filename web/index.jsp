@@ -34,6 +34,8 @@
                     </form>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
+                    <a href="#"><i data-feather="bell" style="margin-right: 20px; margin-top: 4px; color: #EC5252;"></i></a>
+                    <a href="#"><i data-feather="shopping-cart" style="margin-right: 20px; margin-top: 4px; color: black;"></i></a>
                     <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right: 5px; color: #686F7A; background-color: #FFF; border: 1px solid #686F7A; border-radius: 2px;" type="submit">Fazer Login</button>
                     <button class="btn btn-outline-success my-2 my-sm-0" style="color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Cadastre-se</button>
                 </form>
@@ -80,7 +82,7 @@
                 margin-left: -32px;
                 background-color: red;
                 background-image: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
-                margin-top: 200px;
+                margin-top: 274px;
 
             }
 
@@ -166,7 +168,7 @@
         </style>
 
         <!--        Destaque com Carousel-->
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 110px;">
             <div class="row">
                 <div class="skills-description col-md-4 col-sm-4">
                     <h5>A maior seleção de cursos do mundo
@@ -378,9 +380,106 @@
         </div>
         <!--Fim Jumbotron abaixo do card-->
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+        <style>
+            #btnCategories{
+                color: #686F7A;
+                background-color: #FFF;
+                border: 1px solid #686F7A;
+                border-radius: 2px;
+                margin: 10px;
+                height: 70px;
+                max-width: 265px;
+            }
+        </style>
+        <!--        Inicio botoes categorias-->
+        <div class="container">
+            <div class="top-categories" style="font-size: 24px; font-weight: 600; line-height: 1.33em;">Principais categorias</div>
+            <div class="row">
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <div class="w-100"></div>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+                <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
+            </div>
+        </div>
+        <!--Fim Botoes Categorias-->
+
+        <style>
+            .comentarios{
+                background: #F7F8FA;
+                margin-top: 30px;
+                height: 600px;
+            }
+        </style>
+        <div class="comentarios">
+            <div class="row">
+                <div class="container">
+                    <div class="top-categories" style="font-size: 24px; margin-top: 25px; font-weight: 600; line-height: 1.33em;">O que dizem nossos alunos</div>
+                    <div class="container">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">Este é um card mais longo com suporte</p>
+                                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">Este é um card com suporte a texto </p>
+                                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src=".../100px200/" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título do card</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto </p>
+                                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" style="margin-top: 30px;">
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/booking.svg"/></a>
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/volkswagen.svg"/></a>
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/mercedes.svg"/></a>
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/pinterest.svg"/></a>
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/adidas.svg"/></a>
+                        <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/paypal.svg"/></a>
+                        <div class="w-100"></div>
+                        <div class="text-center col" style="max-width: 340px; margin-left: 100px; margin-top: 60px;">
+                            <h4>Ensine na Udemy</h4>
+                            <p>Ensine o que você adora. A Udemy fornece as ferramentas para você criar um curso online.</p>
+                            <button class="btn btn-outline-success my-2 my-sm-0" style="color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Comece a ensinar</button>
+                        </div>
+                        <div class="text-center col" style="max-width: 320px; margin-left: 200px; margin-top: 60px;">
+                            <h4>Udemy for Business</h4>
+                            Tenha acesso ilimitado a mais de 3.000 dos cursos mais bem cotados da Udemy para sua equipe.  
+                            <button class="btn btn-outline-success my-2 my-sm-0" style="margin-top: 18px !important; color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Obter Udemy for Business</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 
 </html>
