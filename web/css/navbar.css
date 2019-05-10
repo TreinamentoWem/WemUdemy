@@ -2,4 +2,40 @@ ul.navbar-nav li.dropdown:hover div.dropdown-menu
 { 
     display: block; 
 }
+#searchBar{
+    min-width:550px;
+    margin-left: 40px;
+}
 
+#searchBar #bodySearch{
+    width: 450px; 
+}
+
+#iconsNavBar{
+    margin-right: 20px; 
+    margin-top: 4px;
+}
+
+#iconsNavBar #notificationIcon{
+    color: #EC5252;
+    margin-right: 20px;
+}
+
+#iconsNavBar #shopIcon{
+    color: black;
+}
+
+#buttonsNavbar #buttonLogin{
+    margin-right: 5px; 
+    color: #686F7A; 
+    background-color: #FFF; 
+    border: 1px solid #686F7A; 
+    border-radius: 2px;
+}
+
+#buttonsNavbar #buttonCad{
+    color: #FFF; 
+    background-color: #EC5252; 
+    border: 1px solid transparent; 
+    border-radius: 2px;
+}

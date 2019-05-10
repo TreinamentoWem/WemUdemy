@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>JSP Page</title>
     </head>
     <body>
@@ -28,147 +29,54 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" style="min-width:550px; margin-left: 40px;" type="search" placeholder="Search" aria-label="Search">
+                    <form class="form-inline" id="searchBar">
+                        <input class="form-control mr-sm-2" id="bodySearch" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="#"><i data-feather="bell" style="margin-right: 20px; margin-top: 4px; color: #EC5252;"></i></a>
-                    <a href="#"><i data-feather="shopping-cart" style="margin-right: 20px; margin-top: 4px; color: black;"></i></a>
-                    <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right: 5px; color: #686F7A; background-color: #FFF; border: 1px solid #686F7A; border-radius: 2px;" type="submit">Fazer Login</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" style="color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Cadastre-se</button>
+                <form class="form-inline" id="iconsNavBar">
+                    <a href="#"><i data-feather="bell" id="notificationIcon"></i></a>
+                    <a href="#"><i data-feather="shopping-cart" id="shopIcon"></i></a>
+                </form>
+                <form class="form-inline" id="buttonsNavbar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="buttonLogin" type="submit">Fazer Login</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="buttonCad" type="submit">Cadastre-se</button>
                 </form>
             </div>
         </nav>
         <!--End Navbar-->
 
-        <style>
-            #jumbotronTop{
-                height: 500px;
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                margin-top: -3px;
-            }
-        </style>
+ 
         <!--        Anuncio Principal-->
-        <div class="jumbotron" id="jumbotronTop" style="background-image: url(img/bannerImage.jpg);">
+        <div class="jumbotron" id="jumbotronTop">
             <div class="container">
-                <h1 class="display-4" style="color: white;">Hello, world!</h1>
-                <p class="lead" style="color: white;">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <h1 class="display-4" id="titleJumbotronTop">Hello, world!</h1>
+                <p class="lead" id="descriptionJumbotronTop">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <form class="form-inline">
-                    <input class="form-control mr-sm-6" style="min-width: 400px;" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-6" id="searchJumbotronTop" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
             <div class="row" id="footer-jumbotron">
-                <div class="col-sm" id="txtFooterJumbotron" style="text-align: right;">
+                <div class="col-sm" id="txtFooterJumbotron">
                     Uma de três colunas
                 </div>
-                <div class="col-sm" id="txtFooterJumbotron" style="text-align: center;">
+                <div class="col-sm" id="txtFooterJumbotron">
                     Uma de três colunas
                 </div>
-                <div class="col-sm" id="txtFooterJumbotron" style="text-align: left;">
+                <div class="col-sm" id="txtFooterJumbotron">
                     Uma de três colunas
                 </div>
             </div>
         </div>
         <!--        Fim Anuncio Principal-->
+    
         <style>
-            #footer-jumbotron{
-                width: 100%;
-                height: 85px;
-                position: absolute;
-                margin-left: -32px;
-                background-color: red;
-                background-image: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
-                margin-top: 274px;
-
-            }
-
-            #txtFooterJumbotron{
-                margin-top: 25px;
-            }
-        </style>
-
-        <style>
-            .skills-description{
-                background: #F7F8FA;
-                display: flex;
-                flex: 1 0 auto;
-                flex-direction: column;
-                justify-content: center;
-                margin: 0px 0px 0px 0;
-                max-width: calc(356px + 15px);
-                padding: 0 32px;
-            }
-
-
-            @media (min-width: 768px) {
-                /* show 3 items */
-                .carousel-inner .active,
-                .carousel-inner .active + .carousel-item,
-                .carousel-inner .active + .carousel-item + .carousel-item {
-                    display: block;
-                }
-
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-                    transition: none;
-                }
-
-                .carousel-inner .carousel-item-next,
-                .carousel-inner .carousel-item-prev {
-                    position: relative;
-                    transform: translate3d(0, 0, 0);
-                }
-
-                .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-                    position: absolute;
-                    top: 0;
-                    right: -33.3333%;
-                    z-index: -1;
-                    display: block;
-                    visibility: visible;
-                }
-
-                /* left or forward direction */
-                .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-                .carousel-item-next.carousel-item-left + .carousel-item,
-                .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-                .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-                    position: relative;
-                    transform: translate3d(-100%, 0, 0);
-                    visibility: visible;
-                }
-
-                /* farthest right hidden item must be abso position for animations */
-                .carousel-inner .carousel-item-prev.carousel-item-right {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    display: block;
-                    visibility: visible;
-                }
-
-                /* right or prev direction */
-                .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-                .carousel-item-prev.carousel-item-right + .carousel-item,
-                .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-                .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-                    position: relative;
-                    transform: translate3d(100%, 0, 0);
-                    visibility: visible;
-                    display: block;
-                    visibility: visible;
-                }
-            }
+           
         </style>
 
         <!--        Destaque com Carousel-->
-        <div class="container" style="margin-top: 110px;">
+        <div class="container" id="destaqueCarousel">
             <div class="row">
                 <div class="skills-description col-md-4 col-sm-4">
                     <h5>A maior seleção de cursos do mundo
@@ -289,13 +197,6 @@
         <!--Fim Destaque com Carousel-->
 
         <!--        Inicio Card-->
-        <style>
-            .card-deck{
-                width: 1130px;
-                margin-left: -30px;
-                margin-top: 30px;
-            }
-        </style>
         <div class="container">
             <div class="card-deck">
                 <div class="card">
@@ -343,36 +244,17 @@
         <!--        Fim Card-->
 
         <style>
-            #jumbotronNews{
-                height: 350px;
-                background-color: #29303B;
-                margin-top: 30px;
-            }
-
-            #header-jumbotron{
-                width: 100%;
-                height: 8px;
-                position: absolute;
-                margin-left: -32px;
-                background-color: red;
-                background-image: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
-                margin-top: -290px;
-
-            }
-
-            #txtFooterJumbotron{
-                margin-top: 25px;
-            }
+        
         </style>
         <!--Jumbotron Abaixo do card-->
         <div class="jumbotron" id="jumbotronNews">
             <div class="container">
-                <h1 class="display-4 text-center" style="color: white;">Hello, world!</h1>
-                <p class="lead text-center" style="color: white;">This is a simple hero unit, a simple jumbotron-style</p>
+                <h1 class="display-4 text-center" id="titleJumbotronNews">Hello, world!</h1>
+                <p class="lead text-center" id="subTitleJumbotronNews">This is a simple hero unit, a simple jumbotron-style</p>
                 <!--                <hr class="my-4 text-center">-->
-                <p class="text-center" style="color: white;">It uses utility classes for typography </p>
+                <p class="text-center" id="descriptionJumbotronNews" style="color: white;">It uses utility classes for typography </p>
                 <p class="lead text-center">
-                    <a class="btn btn-primary btn-lg" style="border-radius: 2px;" href="#" role="button">Learn more</a>
+                    <a class="btn btn-primary btn-lg" id="buttonJumbotronNews" href="#" role="button">Learn more</a>
                 </p>
             </div>
             <div class="row" id="header-jumbotron">
@@ -380,20 +262,9 @@
         </div>
         <!--Fim Jumbotron abaixo do card-->
 
-        <style>
-            #btnCategories{
-                color: #686F7A;
-                background-color: #FFF;
-                border: 1px solid #686F7A;
-                border-radius: 2px;
-                margin: 10px;
-                height: 70px;
-                max-width: 265px;
-            }
-        </style>
         <!--        Inicio botoes categorias-->
         <div class="container">
-            <div class="top-categories" style="font-size: 24px; font-weight: 600; line-height: 1.33em;">Principais categorias</div>
+            <div class="top-categories">Principais categorias</div>
             <div class="row">
                 <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
                 <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
@@ -406,19 +277,13 @@
                 <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
             </div>
         </div>
+        
+        
         <!--Fim Botoes Categorias-->
-
-        <style>
-            .comentarios{
-                background: #F7F8FA;
-                margin-top: 30px;
-                height: 600px;
-            }
-        </style>
         <div class="comentarios">
             <div class="row">
                 <div class="container">
-                    <div class="top-categories" style="font-size: 24px; margin-top: 25px; font-weight: 600; line-height: 1.33em;">O que dizem nossos alunos</div>
+                    <div class="top-categories">O que dizem nossos alunos</div>
                     <div class="container">
                         <div class="card-deck">
                             <div class="card">
@@ -449,7 +314,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row" style="margin-top: 30px;">
+                    <div class="row" id="iconePatrocinadores">
                         <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/booking.svg"/></a>
                         <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/volkswagen.svg"/></a>
                         <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/mercedes.svg"/></a>
@@ -457,15 +322,15 @@
                         <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/adidas.svg"/></a>
                         <a href="#" class="col"><img src="https://i.udemycdn.com/partner-logos/paypal.svg"/></a>
                         <div class="w-100"></div>
-                        <div class="text-center col" style="max-width: 340px; margin-left: 100px; margin-top: 60px;">
+                        <div class="text-center col" id="txtBoxPatrocinadores1">
                             <h4>Ensine na Udemy</h4>
                             <p>Ensine o que você adora. A Udemy fornece as ferramentas para você criar um curso online.</p>
-                            <button class="btn btn-outline-success my-2 my-sm-0" style="color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Comece a ensinar</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="btnTxtPatrocinadores1" type="submit">Comece a ensinar</button>
                         </div>
-                        <div class="text-center col" style="max-width: 320px; margin-left: 200px; margin-top: 60px;">
+                        <div class="text-center col" id="txtBoxPatrocinadores2">
                             <h4>Udemy for Business</h4>
                             Tenha acesso ilimitado a mais de 3.000 dos cursos mais bem cotados da Udemy para sua equipe.  
-                            <button class="btn btn-outline-success my-2 my-sm-0" style="margin-top: 18px !important; color: #FFF; background-color: #EC5252; border: 1px solid transparent; border-radius: 2px;" type="submit">Obter Udemy for Business</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="btnTxtPatrocinadores2" type="submit">Obter Udemy for Business</button>
                         </div>
                     </div>
                 </div>

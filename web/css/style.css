@@ -1,0 +1,214 @@
+/*Begin Banner*/
+#jumbotronTop{
+    background-image: url(../img/bannerImage.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -3px;
+}
+
+#jumbotronTop #titleJumbotronTop{
+    color: white;
+}
+
+#jumbotronTop #descriptionJumbotronTop{
+    color: white;
+}
+
+#jumbotronTop #searchJumbotronTop{
+    min-width: 400px;
+}
+
+#footer-jumbotron{
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    margin-left: -32px;
+    background-color: red;
+    background-image: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
+    margin-top: 274px;
+
+}
+
+#txtFooterJumbotron{
+    margin-top: 25px;
+    text-align: center;
+}
+/*End Banner*/
+
+/*Begin Destaque Carousel*/
+.skills-description{
+    background: #F7F8FA;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 0px 0;
+    max-width: calc(356px + 15px);
+    padding: 0 32px;
+}
+
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+#destaqueCarousel{
+    margin-top: 110px;
+}
+
+/*End Destaque Carousel*/
+
+/*Begin Card Deck*/
+.card-deck{
+    width: 1130px;
+    margin-left: -30px;
+    margin-top: 30px;
+}
+/*End Card Deck*/
+
+
+/*Begin Jumbotron News*/
+#jumbotronNews{
+    height: 350px;
+    background-color: #29303B;
+    margin-top: 30px;
+}
+
+#header-jumbotron{
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    margin-left: -32px;
+    background-color: red;
+    background-image: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
+    margin-top: -290px;
+
+}
+
+#jumbotronNews #titleJumbotronNews{
+    color: white;
+}
+
+#jumbotronNews #descriptionJumbotronNews{
+    color: white;
+}
+
+#jumbotronNews #subTitleJumbotronNews{
+    color: white;
+}
+
+#jumbotronNews #buttonJumbotronNews{
+    border-radius: 2px;
+}
+
+.top-categories {
+    font-size: 24px; 
+    font-weight: 600; 
+    line-height: 1.33em;
+}
+
+#btnCategories{
+    color: #686F7A;
+    background-color: #FFF;
+    border: 1px solid #686F7A;
+    border-radius: 2px;
+    margin: 10px;
+    height: 70px;
+    max-width: 265px;
+}
+
+.comentarios{
+    background: #F7F8FA;
+    margin-top: 30px;
+    height: 600px;
+}
+
+#iconePatrocinadores{
+    margin-top: 30px;
+}
+
+#txtBoxPatrocinadores1{
+    max-width: 340px; 
+    margin-left: 100px; 
+    margin-top: 60px;
+}
+
+#txtBoxPatrocinadores2{
+    max-width: 320px; 
+    margin-left: 200px; 
+    margin-top: 60px;
+}
+
+#btnTxtPatrocinadores1{
+    color: #FFF; 
+    background-color: #EC5252; 
+    border: 1px solid transparent; 
+    border-radius: 2px;
+}
+
+#btnTxtPatrocinadores2{
+    margin-top: 18px !important; 
+    color: #FFF; 
+    background-color: #EC5252; 
+    border: 1px solid transparent; 
+    border-radius: 2px;
+}
