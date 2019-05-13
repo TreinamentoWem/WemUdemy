@@ -11,7 +11,7 @@
     <body>
         <!--Begin Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img src="###" id="iconeLogo" alt="Logo"></a> <!--  Logo-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,13 +20,13 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="margin-left: 20px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categorias
+                            <img src="###" id="iconeCategorias" alt="Icone"> Categorias
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"><img src="###" id="iconeSubcategorias" alt="Icone">Action</a>   <!--incluir img nos botoes-->
+                            <a class="dropdown-item" href="#"><img src="###" id="iconeSubcategorias" alt="Icone">Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#"><img src="###" id="iconeSubcategorias" alt="Icone">Something else here</a>
                         </div>
                     </li>
                     <form class="form-inline" id="searchBar">
@@ -35,8 +35,8 @@
                     </form>
                 </ul>
                 <form class="form-inline" id="iconsNavBar">
-                    <a href="#"><i data-feather="bell" id="notificationIcon"></i></a>
-                    <a href="#"><i data-feather="shopping-cart" id="shopIcon"></i></a>
+                    <a href="#"><img src="###" alt="Icone" id="notificationIcon"></i></a> <!--Transformar icone em imagem-->
+                    <a href="#"><img src="###" alt="Icone" id="shopIcon"></i></a>
                 </form>
                 <form class="form-inline" id="buttonsNavbar">
                     <button class="btn btn-outline-success my-2 my-sm-0" id="buttonLogin" type="submit">Fazer Login</button>
@@ -46,7 +46,7 @@
         </nav>
         <!--End Navbar-->
 
- 
+
         <!--        Anuncio Principal-->
         <div class="jumbotron" id="jumbotronTop">
             <div class="container">
@@ -57,7 +57,7 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-            <div class="row" id="footer-jumbotron">
+            <div class="row" id="footer-jumbotron"> <!-- Ajustar para criar dinam o footer-->
                 <div class="col-sm" id="txtFooterJumbotron">
                     Uma de três colunas
                 </div>
@@ -70,10 +70,7 @@
             </div>
         </div>
         <!--        Fim Anuncio Principal-->
-    
-        <style>
-           
-        </style>
+
 
         <!--        Destaque com Carousel-->
         <div class="container" id="destaqueCarousel">
@@ -243,9 +240,6 @@
         </div>
         <!--        Fim Card-->
 
-        <style>
-        
-        </style>
         <!--Jumbotron Abaixo do card-->
         <div class="jumbotron" id="jumbotronNews">
             <div class="container">
@@ -277,8 +271,8 @@
                 <button class="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-3" id="btnCategories" type="submit">Fazer Login</button>
             </div>
         </div>
-        
-        
+
+
         <!--Fim Botoes Categorias-->
         <div class="comentarios">
             <div class="row">
@@ -336,15 +330,105 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace();
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="#"><p>Ensine na Udemy</p></a>
+                        <a href="#"><p>Aplicativo da Udemy</p></a>
+                        <a href="#"><p>Quem somos</p></a>    
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><p>Carreiras</p></a>
+                        <a href="#"><p>Blog</p></a>
+                        <a href="#"><p>Assuntos</p></a>   
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><p>Suporte</p></a>
+                        <a href="#"><p>Afiliado</p></a>
+                    </div>
+                    <div class="col-sm-12 footer__links--international">
+                        <ul class="links list-inline mt30">
+                            <li>
+                                <strong>
+                                    Local home Page:
+                                </strong>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>                            
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </footer>
+
+        <div class="container-fluid" id="copyrightLine">
+            <div class="row">
+                <a href="#"><img src="Logo"></a>
+                <a href="#" class="col">Copyright © Your Website 2019</a>
+            </div>
+        </div>
+        <div class="subLineFooter">
+        </div>
+
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 
 </html>

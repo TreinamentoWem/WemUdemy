@@ -2,6 +2,27 @@ ul.navbar-nav li.dropdown:hover div.dropdown-menu
 { 
     display: block; 
 }
+
+#iconeLogo{
+    vertical-align: baseline; 
+}
+
+#iconeCategorias{
+    vertical-align: baseline; 
+}
+
+#iconeSubcategorias{
+    vertical-align: baseline; 
+}
+
+#notificationIcon{
+    vertical-align: baseline; 
+}
+
+#shopIcon{
+    vertical-align: baseline; 
+}
+
 #searchBar{
     min-width:550px;
     margin-left: 40px;
